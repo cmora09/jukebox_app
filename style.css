@@ -1,0 +1,8 @@
+html,body{
+	background-color: black;
+	background-image: url("music.jpg");
+	background-size: cover;
+	color: white;
+	font-family: 'Jura', sans-serif;
+
+}
