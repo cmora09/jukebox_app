@@ -8,16 +8,25 @@
 </head>
 <body>
 	<header>
-		<h1>The Box: Music Web</h1>
+		<h1>The Box</h1>
 		<img id="logo" src="">
 	</header>
 	<div id="wrapper">
-		<div id="artist-song">
-			<div id="artist">
-				<audio id="song"src="http://www.nasa.gov/mp3/639898main_Houston_Discovery.mp3"></audio>
-				<button id="play-button">Play</button>
-				<button id="pause-button">Pause</button>
-
+			<div id="player">
+				<audio id="song" src="#"></audio>
+				<button id="play-button" onclick="Jukebox.play()">Play</button>
+				<button id="pause-button" onclick="Jukebox.pause()">Stop</button>
+				<button id="next-button" onclick="Jukebox.next()">Next </button>
+				<button id="prev-button" onclick="Jukebox.prev()">Previous</button>
+				<label for="volume">Volume:</label>
+				<input id="volume" type="range" min="0.0" max="1.0" step="0.1" value="1.0">
+				<div id="add-song">
+					<form>
+						<label for="title">Title:</label>
+  							<input type="text" name="Title"><br>
+  							<input type="text" name="lastname">
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
