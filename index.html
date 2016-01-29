@@ -8,28 +8,30 @@
 </head>
 <body>
 	<header>
-		<h1>The Box</h1>
-		<img id="logo" src="">
+		<nav>
+			<h1>The Box</h1>
+		</nav>
 	</header>
-	<div id="wrapper">
-			<div id="player">
-				<audio id="song" src="#"></audio>
+		<div id="player">
+			<select id="playlist" name="playlist" onchange="Jukebox.select()" value="#">
+				<option id="song1" value="0">Daft Punk-  One More Time/Aerodynamic</option>
+  				<option id="song2" value="1">Daft Punk- Around the World, HBFS</option>
+  				<option id="song3" value="2">Daft Punk- Robot Rock, Oh Yeah</option>
+  				<option id="song4" value="3">Daft Punk- Too Long, Steam Machine</option>
+  			</select>
+			<audio id="song" src="daft_punk/alive_2007	/08-OneMoreTime,Aerodynamic.mp3"></audio>
+			<div class="button-group">
 				<button id="play-button" onclick="Jukebox.play()">Play</button>
 				<button id="pause-button" onclick="Jukebox.pause()">Stop</button>
 				<button id="next-button" onclick="Jukebox.next()">Next </button>
-				<button id="prev-button" onclick="Jukebox.prev()">Previous</button>
+				<button id="prev-button" onclick="Jukebox.prev()">Prev</button>
 				<label for="volume">Volume:</label>
 				<input id="volume" type="range" min="0.0" max="1.0" step="0.1" value="1.0">
-				<div id="add-song">
-					<form>
-						<label for="title">Title:</label>
-  							<input type="text" name="Title"><br>
-  							<input type="text" name="lastname">
-					</form>
-				</div>
 			</div>
 		</div>
 	</div>
+
 <script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>

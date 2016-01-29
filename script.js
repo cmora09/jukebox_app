@@ -1,8 +1,9 @@
 var Jukebox = {
 	
 	playList: ["daft_punk/alive_2007/08-OneMoreTime,Aerodynamic.mp3","daft_punk/alive_2007/05-AroundTheWorld,HarderBetterFasterStronger.mp3","daft_punk/alive_2007/01-Robot Rock,OhYeah.mp3","daft_punk/alive_2007/04-TooLong,SteamMachine.mp3"],
-	
 	currentSong: 0,
+
+	choice: document.getElementById("playlist").value,
 	
 	play: function(){
 			document.getElementById("song").setAttribute("src", this.playList[this.currentSong]);
@@ -28,8 +29,16 @@ var Jukebox = {
 			}
 			document.getElementById("song").setAttribute("src",this.playList[this.currentSong]);
 				this.play();
+	},
+	
+	
+	select: function(){
+			this.currentSong = document.getElementById("playlist").value;
+			console.log(document.getElementById("playlist").value)
+		
 	}
 }
+
 
 
 
